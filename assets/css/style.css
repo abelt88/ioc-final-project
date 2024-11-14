@@ -540,11 +540,11 @@ a:hover {
 .gap-3 {
   gap: 0.75rem;
 }
-.border-b-2 {
-  border-bottom-width: 2px;
-}
 .border-b {
   border-bottom-width: 1px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-b-white {
   --tw-border-opacity: 1;
