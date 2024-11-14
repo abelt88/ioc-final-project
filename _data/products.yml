@@ -11,7 +11,7 @@ wines:
   - wine: Pinot Grigio
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
     vintage: 2021
-    blend: 
+    blend: 90% Pinot Grigio 10% Pinot Gris
     taste: Apple, Pear
     region: Veneto
     image: /images/white-wine-transp.png
@@ -26,12 +26,12 @@ wines:
     image: /images/red-wine-transp.png
     button-text: Add to cart
     button-link: #
-  - wine: Cabernet Sauvignon
+  - wine: Vermentino
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
-    vintage: 2021
-    blend: 
-    taste: Black Cherry, Plum, Spice
-    region: Central Coast
+    vintage: 2023
+    blend: 75% Vermentino 25% Pinot Gris
+    taste: Honey, Vanilla
+    region: Tuscany
     image: /images/white-wine-transp.png
     button-text: Add to cart
     button-link: #

@@ -1,0 +1,27 @@
+<section class="">
+
+</section>
+
+<section class="min-h-screen flex flex-col border-rust border-b">
+  <div class="grid md:grid-cols-2 grow">
+    <div class=" self-end px-[10%] py-[20%]">
+      <h2 class="text-5xl">{{block.heading}}</h2>
+      <p class="pb-6">{{block.paragraph}}</p>
+      <a href="{{block.link}}" class="button">{{block.link-text}}</a>
+    </div>
+    <div class="relative aspect-square md:aspect-auto md:h-full border-rust {% if block.image-side == 'left' %} order-first border-r {% else %} border-l {% endif %}">
+        <img class="object-cover absolute top-0 left-0 w-full h-full object-top" src="{{block.image}}" alt="{{block.image-alt-text}}">
+    </div>
+    <div class="">
+      <h3 class="">Vintage</h3>
+      <p class="">{{site.data.products.vintage}}</p>
+      <h3 class="">Blend</h3>
+      <p class="">{{site.data.products.blend}}</p>
+      <h3 class="">Region</h3>
+      <p class="">{{site.data.products.region}}</p>
+      <h3 class="">Tasting Notes</h3>
+      <p class="">{{site.data.products.taste}}</p>
+
+    </div>
+  </div>
+</section>

@@ -520,6 +520,15 @@ a:hover {
 .right-0 {
   right: 0px;
 }
+.left-0 {
+  left: 0px;
+}
+.top-0 {
+  top: 0px;
+}
+.order-first {
+  order: -9999;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -543,6 +552,12 @@ a:hover {
 .flex {
   display: flex;
 }
+.grid {
+  display: grid;
+}
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
 .h-full {
   height: 100%;
 }
@@ -559,6 +574,9 @@ a:hover {
   max-width: 40vh;
 }
 .flex-grow {
+  flex-grow: 1;
+}
+.grow {
   flex-grow: 1;
 }
 .flex-col {
@@ -579,6 +597,9 @@ a:hover {
 .gap-6 {
   gap: 1.5rem;
 }
+.self-end {
+  align-self: flex-end;
+}
 .border-2 {
   border-width: 2px;
 }
@@ -587,6 +608,12 @@ a:hover {
 }
 .border-b-2 {
   border-bottom-width: 2px;
+}
+.border-l {
+  border-left-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
 }
 .border-cream {
   --tw-border-opacity: 1;
@@ -643,8 +670,19 @@ a:hover {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.px-\[10\%\] {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.py-\[20\%\] {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
 .pb-20 {
   padding-bottom: 5rem;
+}
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 .text-right {
   text-align: right;
@@ -666,6 +704,10 @@ a:hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -730,6 +772,15 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+  .md\:aspect-auto {
+    aspect-ratio: auto;
+  }
+  .md\:h-full {
+    height: 100%;
+  }
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .md\:flex-row {
     flex-direction: row;
   }
