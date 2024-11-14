@@ -9,3 +9,29 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+/* Custom CSS */
+
+@layer base {
+    body {
+        @apply font-body;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading mb-4;
+    }
+    p {
+        @apply mb-4;
+    }
+}
+
+@layer components {
+    .button {
+        @apply uppercase bg-rust text-cream py-2 px-5;
+    }
+    .button:hover {
+        @apply text-cream bg-yellow-950 font-normal;
+    }
+    a:hover {
+        @apply font-bold;
+    }
+}

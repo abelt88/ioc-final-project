@@ -1,0 +1,12 @@
+<header class="relative min-h-screen flex flex-col border-rust border-b">
+  <img class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover {% if block.image-focus == 'top' %} object-top {% elsif blockimage-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{block.image}}" alt="{{block.image-alt-text}}">
+  <div class="relative flex flex-col flex-grow justify-center">
+      <hr class="border-rust max-w-[40vh]">
+      <div class="ml-32 lg:ml-56 py-10">
+          <p class="subtitle mb-0">{{block.subtitle}}</p>
+          <h1 class="text-8xl -tracking-[5%] pb-20">{{block.main-heading}}</h1>
+      </div>
+      
+  </div>
+
+</header>
