@@ -1,0 +1,7 @@
+  more-than-link: /visit.html
+  tours:
+      - image: /images/vineyard-9.jpg
+        title: Bikram Hot Yoga
+        info_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+        button-text: Sign Up
+        button-link: 

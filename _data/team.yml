@@ -1,0 +1,8 @@
+  more-than-link: /visit.html
+  cards:
+      - image: /images/team-1.jpg
+        title: Joe
+        job: Master Maker
+        info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+        button-text: Sign Up
+        button-link:

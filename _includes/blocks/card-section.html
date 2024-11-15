@@ -1,0 +1,32 @@
+<section class=""> 
+    <div class="py-12">
+
+      {% if block.heading %}
+      <h2 class="px-10 text-4xl tracking-wide">{{block.heading}}</h2>
+      {% endif %}
+    
+      <!-- Add scrolling feature if more than 3 cards -->
+      <div class="px-20 gap-5 {% if items.size > 3 %} md:flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %} no-scroll">
+      {% for item in items %}
+
+        <div class="text-center py-6 {% if block.card-borders == true %} border-2 border-clay {% endif %} {% if items.size > 3 %} basis-[30%]  shrink-0 {% endif %}">
+          <img class="aspect-square w-full object-cover border border-clay" src="{{item.image}}">
+          <h4 class="text-3xl mt-4 {% if item.job %} mb-0 py-2 {% else %} py-4 {% endif %}">{{item.title}}</h4>
+          {% if item.job %}
+          <h5 class="text-2x1 font-body">{{item.job}}</h5>
+          {% endif %}
+          <hr class="border-clay">
+          <div class="pt-4">{{item.info_html}}</div>
+
+          {% if item.button-link and item.button-text %}
+          <div>
+            <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>
+          </div>
+          {% endif %}
+        </div>
+
+      {% endfor %}
+      </div>
+    
+    </div>
+</section>
