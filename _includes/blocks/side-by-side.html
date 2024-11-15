@@ -1,5 +1,5 @@
 <section class="min-h-screen flex flex-col relative">
-  <div class="min-h-[80vh] min-w-full flex flex-col bg-olive absolute -top-[1px]"></div>
+  <div class="min-h-[80vh] min-w-full bg-olive absolute -top-[1px]"></div>
   <div class="relative grid md:grid-cols-2 grow">
     <div class=" self-center px-[10%] py-[20%] relative">
       <h2 class="text-5xl">{{block.heading}}</h2>
@@ -7,9 +7,13 @@
       <a href="{{block.link}}" class="button">{{block.link-text}}</a>
     </div>
     <div class="relative aspect-square md:aspect-auto md:h-full {% if block.image-side == 'left' %} order-first {% endif %}">
+        {% if block.decorative-border == true %}
         <div class="absolute border-b {% if block.image-side == 'left' %} border-r {% else %} border-l right-0 {% endif %} border-clay min-w-[80%] min-h-[95vh]"></div>
-        <img class="absolute top-[5%] w-1/2 {% if block.image-side == 'left' %} left-[5%] {% else %} right-[5%] {% endif %}" src="{{block.back-image}}">
-        <img class="absolute top-[8%] w-[70%] {% if block.image-side == 'left' %} left-[20%] {% else %} right-[20%] {% endif %}" src="{{block.front-image}}" alt="{{block.front-image-alt-text}}">
+        {% endif %}
+          <img class="absolute aspect-[3/4] object-cover top-[5%] w-[60%] {% if block.image-side == 'left' %} left-[5%] {% else %} right-[5%] {% endif %}" src="{{block.back-image}}">
+          <img class="absolute aspect-[3/4] object-cover top-[8%] w-[70%] {% if block.image-side == 'left' %} left-[20%] {% else %} right-[20%] {% endif %}" src="{{block.front-image}}" alt="{{block.front-image-alt-text}}">
+        
+        
     </div>
   </div>
 </section>
