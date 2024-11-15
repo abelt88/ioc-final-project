@@ -16,6 +16,14 @@ _inputs:
     type: text
     hidden: true
     cascade: true
+  image-side:
+    type: select
+    options:
+      allow-empty: false
+      values:
+        - left
+        - right
+    cascade: true
 _structures:
   blocks:
     style: select
