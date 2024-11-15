@@ -16,6 +16,18 @@ _structures:
     style: select
     id_key:
     values:
+      - id:
+        default:
+        icon:
+        image:
+        label:
+        picker_preview:
+        preview:
+        tags:
+        groups:
+        place_groups_below:
+        tabbed:
+        value:
 timezone: America/New_York
 markdown:
   engine: commonmark
