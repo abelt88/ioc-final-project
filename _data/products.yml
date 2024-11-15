@@ -1,35 +1,39 @@
 wines:
   - wine: Cabernet Sauvignon
+    filter-values: red
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
     vintage: 2021
-    blend: 
+    blend: 60% Cabarent, 20% Merlot, 10% Pinot Noir
     taste: Black Cherry, Plum, Spice
     region: Central Coast
     image: /images/red-wine-transp.png
     button-text: Add to cart
     button-link: #
   - wine: Pinot Grigio
+    filter-values: white
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
     vintage: 2021
-    blend: 90% Pinot Grigio 10% Pinot Gris
+    blend: 90% Pinot Grigio, 10% Pinot Gris
     taste: Apple, Pear
     region: Veneto
     image: /images/white-wine-transp.png
     button-text: Add to cart
     button-link: #
   - wine: Chianti
+    filter-values: red
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
     vintage: 2022
-    blend: 90% Sangiovese
+    blend: 90% Sangiovese, 10% Merlot
     taste: Dried Cherry, Black Currant, Vanilla
     region: Tuscany
     image: /images/red-wine-transp.png
     button-text: Add to cart
     button-link: #
   - wine: Vermentino
+    filter-values: white
     info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
     vintage: 2023
-    blend: 75% Vermentino 25% Pinot Gris
+    blend: 75% Vermentino, 25% Pinot Gris
     taste: Honey, Vanilla
     region: Tuscany
     image: /images/white-wine-transp.png

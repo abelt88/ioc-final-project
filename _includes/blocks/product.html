@@ -1,27 +1,72 @@
-<section class="">
+<div class=" wine-filter-buttons">
+  <button class="" data-filtervalue="all">All</button>
+  <button class="" data-filtervalue="white">Whites</button>
+  <button class="" data-filtervalue="red">Reds</button>
+  <button class="" data-filtervalue="rose">Rose</button>
+</div>
 
-</section>
+{% for item in site.data.products.wines %}
 
-<section class="min-h-screen flex flex-col border-rust border-b">
-  <div class="grid md:grid-cols-2 grow">
-    <div class=" self-end px-[10%] py-[20%]">
-      <h2 class="text-5xl">{{block.heading}}</h2>
-      <p class="pb-6">{{block.paragraph}}</p>
-      <a href="{{block.link}}" class="button">{{block.link-text}}</a>
+<section class="wine-option {{item.filter-values}} min-h-screen flex flex-col mb-24 alt-parent {% cycle 'bg-white', '' %}">
+  <div class="grid md:grid-cols-3 grow">
+    <div class=" self-center px-[10%] py-[20%] {% cycle 'md:pl-[20%]', 'order-last md:pl-[5%] md:pr-[20%]' %}">
+      <h2 class="text-5xl">{{item.wine}}</h2>
+      <p class="pb-6">{{item.info}}</p>
+      <a href="{{site.data.products.button-link}}" class="button">{{item.button-text}}</a>
     </div>
-    <div class="relative aspect-square md:aspect-auto md:h-full border-rust {% if block.image-side == 'left' %} order-first border-r {% else %} border-l {% endif %}">
-        <img class="object-cover absolute top-0 left-0 w-full h-full object-top" src="{{block.image}}" alt="{{block.image-alt-text}}">
+    <div class="relative min-h-[50vh]">
+        <img class="object-contain absolute w-full h-full" src="{{item.image}}">
     </div>
-    <div class="">
-      <h3 class="">Vintage</h3>
-      <p class="">{{site.data.products.vintage}}</p>
-      <h3 class="">Blend</h3>
-      <p class="">{{site.data.products.blend}}</p>
-      <h3 class="">Region</h3>
-      <p class="">{{site.data.products.region}}</p>
-      <h3 class="">Tasting Notes</h3>
-      <p class="">{{site.data.products.taste}}</p>
-
+    <div class="self-center px-[10%] py-[20%] {% cycle 'md:pl-[5%] md:pr-[20%]', 'order-first md:pl-[20%]' %}">
+      <h3 class="text-2xl font-bold mb-0">Vintage:</h3>
+      <p class="font-light">{{item.vintage}}</p>
+      <h3 class="text-2xl font-bold mb-0">Blend:</h3>
+      <p class="font-light">{{item.blend}}</p>
+      <h3 class="text-2xl font-bold mb-0">Region:</h3>
+      <p class="font-light">{{item.region}}</p>
+      <h3 class="text-2xl font-bold mb-0">Tasting Notes:</h3>
+      <p class="font-light">{{item.taste}}</p>
     </div>
   </div>
 </section>
+
+{% endfor %}
+
+<style>
+  .alt-parent{
+  }
+  .alt-parent:nth-child(even){
+    background-color: #fff;
+  }
+</style>
+
+<script>
+  const filterButtons = document.querySelectorAll('.wine-filter-buttons button');
+  const wines = document.querySelectorAll('.wine-option')
+  console.log(filterButtons,wines)
+
+  function clickedbutton(){
+    console.log(this.dataset.filtervalue)
+
+    wines.forEach(wine => {
+      if (
+        this.dataset.filtervalue == 'all'
+      ){
+        wine.classList.remove('hidden')
+      } else 
+      if (
+        wine.classList.contains(this.dataset.filtervalue)
+      ) {
+        wine.classList.remove('hidden')
+      } else {
+        wine.classList.add('hidden')
+      }
+    })
+
+
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click',clickedbutton)
+  })
+</script>
