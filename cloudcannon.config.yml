@@ -12,22 +12,18 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
 _structures:
-  Blocks:
+  blocks:
     style: select
-    id_key:
     values:
-      - id:
-        default:
-        icon:
-        image:
-        label:
-        picker_preview:
-        preview:
-        tags:
-        groups:
-        place_groups_below:
-        tabbed:
+      - label: hero banner
         value:
+          id: hero-banner
+          image: /images/vineyard-6.jpg
+          image-width: full
+          image-position: bottom
+          image-alt-text: yoga-pose
+          main-heading: The Yoga Studio
+          subtitle: Welcome to
 timezone: America/New_York
 markdown:
   engine: commonmark
