@@ -1,15 +1,15 @@
-<div class=" wine-filter-buttons">
-  <button class="" data-filtervalue="all">All</button>
-  <button class="" data-filtervalue="white">Whites</button>
-  <button class="" data-filtervalue="red">Reds</button>
-  <button class="" data-filtervalue="rose">Rose</button>
+<div class=" wine-filter-buttons text-center font-heading">
+  <button class="py-4 px-2" data-filtervalue="all">All</button> |
+  <button class="py-4 px-2" data-filtervalue="white">Whites</button> |
+  <button class="py-4 px-2" data-filtervalue="red">Reds</button> |
+  <button class="py-4 px-2" data-filtervalue="rose">Rose</button>
 </div>
 
 {% for item in site.data.products.wines %}
 
 <section class="wine-option {{item.filter-values}} min-h-screen flex flex-col mb-24 alt-parent {% cycle 'bg-white', '' %}">
   <div class="grid md:grid-cols-3 grow">
-    <div class=" self-center px-[10%] py-[20%] {% cycle 'md:pl-[20%]', 'order-last md:pl-[5%] md:pr-[20%]' %}">
+    <div class=" self-center px-[10%] py-[20%] {% cycle 'md:pl-[20%]', 'md:order-last md:pl-[5%] md:pr-[20%]' %}">
       <h2 class="text-5xl">{{item.wine}}</h2>
       <p class="pb-6">{{item.info}}</p>
       <a href="{{site.data.products.button-link}}" class="button">{{item.button-text}}</a>
@@ -17,7 +17,7 @@
     <div class="relative min-h-[50vh]">
         <img class="object-contain absolute w-full h-full" src="{{item.image}}">
     </div>
-    <div class="self-center px-[10%] py-[20%] {% cycle 'md:pl-[5%] md:pr-[20%]', 'order-first md:pl-[20%]' %}">
+    <div class="self-center px-[10%] py-[20%] {% cycle 'md:pl-[5%] md:pr-[20%]', 'md:order-first md:pl-[20%]' %}">
       <h3 class="text-2xl font-bold mb-0">Vintage:</h3>
       <p class="font-light">{{item.vintage}}</p>
       <h3 class="text-2xl font-bold mb-0">Blend:</h3>
