@@ -662,6 +662,9 @@ header nav a:hover {
 .w-full {
   width: 100%;
 }
+.w-auto {
+  width: auto;
+}
 .min-w-\[78\%\] {
   min-width: 78%;
 }
@@ -679,6 +682,12 @@ header nav a:hover {
 }
 .max-w-\[40vh\] {
   max-width: 40vh;
+}
+.max-w-\[50\%\] {
+  max-width: 50%;
+}
+.max-w-\[60\%\] {
+  max-width: 60%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -790,6 +799,9 @@ header nav a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-gray-800\/40 {
+  background-color: rgb(31 41 55 / 0.4);
+}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -825,6 +837,9 @@ header nav a:hover {
 }
 .p-\[5\%\] {
   padding: 5%;
+}
+.p-24 {
+  padding: 6rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -906,6 +921,9 @@ header nav a:hover {
 .pt-4 {
   padding-top: 1rem;
 }
+.pl-24 {
+  padding-left: 6rem;
+}
 .text-center {
   text-align: center;
 }
@@ -941,6 +959,10 @@ header nav a:hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1076,6 +1098,15 @@ svg {
   .md\:h-full {
     height: 100%;
   }
+  .md\:min-h-\[50vh\] {
+    min-height: 50vh;
+  }
+  .md\:max-w-\[60\%\] {
+    max-width: 60%;
+  }
+  .md\:max-w-\[70\%\] {
+    max-width: 70%;
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1120,12 +1151,18 @@ svg {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .lg\:p-44 {
+    padding: 11rem;
+  }
   .lg\:px-56 {
     padding-left: 14rem;
     padding-right: 14rem;
   }
   .lg\:pl-56 {
     padding-left: 14rem;
+  }
+  .lg\:pl-44 {
+    padding-left: 11rem;
   }
   .lg\:text-7xl {
     font-size: 4.5rem;

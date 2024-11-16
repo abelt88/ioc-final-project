@@ -1,8 +1,20 @@
-  more-than-link: /visit.html
+  more-than-link:
   cards:
       - image: /images/team-1.jpg
-        title: Joe
+        title: Joe Dunham
         job: Master Maker
+        info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+        button-text: Sign Up
+        button-link:
+      - image: /images/team-2.jpg
+        title: Beth Gilbert
+        job: Sr. Marketing Director
+        info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+        button-text: Sign Up
+        button-link:
+      - image: /images/team-4.jpg
+        title: Anita Hernandez
+        job: Social Media Manager
         info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
         button-text: Sign Up
         button-link:

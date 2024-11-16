@@ -1,7 +1,7 @@
 <section class="grid grid-cols-6 p-[5%] bg-clay latest-news">
   <div class="text-white p-[5%]">
-    <h2> Latest News </h2>
-    <p class="opacity-40"> Covering March & April 2021 </p> 
+    <h2 class="text-3xl">{{block.section-heading}}</h2>
+    <p class="opacity-40">{{block.sub-heading}}</p> 
   </div> 
   <div class="col-span-5 flex overflow-x-auto flex-nowrap gap-8">
     {% for item in items%}
