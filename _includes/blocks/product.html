@@ -7,17 +7,17 @@
 
 {% for item in site.data.products.wines %}
 
-<section class="wine-option {{item.filter-values}} min-h-screen flex flex-col mb-24 alt-parent {% cycle 'odd', 'even' %}">
+<section class="wine-option {{item.filter-values}} min-h-screen flex flex-col py-10 lg:pb-14 alt-parent {% cycle 'odd', 'even' %}">
   <div class="grid md:grid-cols-3 grow">
-    <div class=" self-center wine-heading px-[10%] py-[20%]">
+    <div class=" self-center wine-heading px-[10%] py-[5%] md:py-[20%]">
       <h2 class="text-5xl">{{item.wine}}</h2>
       <p class="pb-6">{{item.info}}</p>
       <a href="{{site.data.products.button-link}}" class="button">{{item.button-text}}</a>
     </div>
-    <div class="relative md:min-h-[50vh] py-12">
+    <div class="relative md:min-h-[50vh] md:py-12">
         <img class="object-contain h-full mx-auto " src="{{item.image}}">
     </div>
-    <div class="self-center wine-stats px-[10%] py-[20%]">
+    <div class="self-center wine-stats px-[10%] py-[5%] md:py-[20%]">
       <h3 class="text-2xl font-bold mb-0">Vintage:</h3>
       <p class="font-light">{{item.vintage}}</p>
       <h3 class="text-2xl font-bold mb-0">Blend:</h3>

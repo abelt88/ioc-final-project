@@ -44,6 +44,9 @@
   {% elsif block.type == 'team' %}
       {% assign items = site.data.team.cards %}
       {% assign link = site.data.team.more-than-link %}
+  {% elsif block.type == 'membership' %}
+      {% assign items = site.data.membership.cards %}
+      {% assign link = site.data.membership.more-than-link %}
   <!-- keeping adding for as many types as you want -->
 
   {% else %}

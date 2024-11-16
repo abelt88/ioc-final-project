@@ -1,0 +1,43 @@
+more-than-link: 
+cards:
+  - image: /images/team-1.jpg
+    title: Signature Membership
+    job: $675 per shipment
+    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    button-text: Join The Club
+    button-link: /contact.html
+    features:
+      - option: 6 bottles per year
+      - option: $25 shipping fee
+      - option: 2 complimentary vists per year
+      - option: Exclusive access to member-only wines
+  - image: /images/team-1.jpg
+    title: Legacy Membership
+    job: $1,300 per shipment
+    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    button-text: Join The Club
+    button-link: /contact.html
+    features:
+      - option: 12 bottles per year
+      - option: Complimentary shipping
+      - option: 3 complimentary vists per year
+      - option: Exclusive access to member-only wines
+      - option: Invitations to private events
+      - option: Referral benefits
+  - image: /images/team-1.jpg
+    title: Royal Membership
+    job: $2,700 per shipment
+    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    button-text: Join The Club
+    button-link: /contact.html
+    features:
+      - option: 18 bottles per year
+      - option: Complimentary shipping
+      - option: 5 complimentary vists per year
+      - option: Exclusive access to member-only wines
+      - option: Invitations to private events
+      - option: Wood box sets available
+      - option: Private tastings around the globe
+      - option: 20% savings on elevate experiences
+      - option: Referral benefits
+      

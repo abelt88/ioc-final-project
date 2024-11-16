@@ -18,6 +18,12 @@
           <hr class="border-clay">
           <div class="pt-4">{{item.info_html}}</div>
 
+          {% for item in item.features %}
+
+          <p class="">{{item.option}}</p>
+
+          {% endfor %}
+
           {% if item.button-link and item.button-text %}
           <div>
             <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>

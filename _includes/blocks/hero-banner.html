@@ -1,6 +1,6 @@
-<header class="relative min-h-screen flex flex-col">
+<header class="relative {% if block.image-height == 'small' %} min-h-[70vh] {% else %} min-h-[95vh] {% endif %} flex flex-col">
   <img class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover {% if block.image-focus == 'top' %} object-top {% elsif block.image-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{block.image}}" alt="{{block.image-alt-text}}">
-  <div class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full  bg-gray-800/20"></div>
+  <div class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full  bg-gray-800/30"></div>
   <div class="relative flex flex-col flex-grow justify-center">
       <!-- <hr class=" max-w-[40vh]"> -->
       <div class="pl-32 lg:pl-56 py-10 text-cream">
