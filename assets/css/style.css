@@ -617,6 +617,9 @@ header nav a:hover {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-auto {
+  margin-top: auto;
+}
 .block {
   display: block;
 }
@@ -755,8 +758,14 @@ header nav a:hover {
 .gap-8 {
   gap: 2rem;
 }
+.self-end {
+  align-self: flex-end;
+}
 .self-center {
   align-self: center;
+}
+.justify-self-end {
+  justify-self: end;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -927,6 +936,10 @@ header nav a:hover {
 .py-\[5\%\] {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .pb-20 {
   padding-bottom: 5rem;
