@@ -35,6 +35,26 @@
     .button:hover {
         @apply text-cream bg-yellow-950 font-normal;
     }
+
+    .odd {
+        @apply bg-white;
+    }
+    .odd .wine-heading {
+        @apply md:pl-[20%];
+    }
+
+    .even .wine-heading {
+        @apply md:order-last md:pl-[5%] md:pr-[20%];
+    }
+
+    .odd .wine-stats{
+        @apply md:pl-[5%] md:pr-[20%];
+    }
+
+    .even .wine-stats {
+        @apply md:order-first md:pl-[20%];
+    }
+
 }
 
 svg {

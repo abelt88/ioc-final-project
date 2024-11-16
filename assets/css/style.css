@@ -501,6 +501,28 @@ header nav a:hover {
   --tw-text-opacity: 1;
   color: rgb(245 235 226 / var(--tw-text-opacity));
 }
+.odd {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+@media (min-width: 768px) {
+  .odd .wine-heading {
+    padding-left: 20%;
+  }
+  .even .wine-heading {
+    order: 9999;
+    padding-left: 5%;
+    padding-right: 20%;
+  }
+  .odd .wine-stats {
+    padding-left: 5%;
+    padding-right: 20%;
+  }
+  .even .wine-stats {
+    order: -9999;
+    padding-left: 20%;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -548,6 +570,9 @@ header nav a:hover {
 }
 .order-first {
   order: -9999;
+}
+.col-span-5 {
+  grid-column: span 5 / span 5;
 }
 .mx-auto {
   margin-left: auto;
@@ -649,6 +674,9 @@ header nav a:hover {
 .max-w-4xl {
   max-width: 56rem;
 }
+.max-w-96 {
+  max-width: 24rem;
+}
 .max-w-\[40vh\] {
   max-width: 40vh;
 }
@@ -669,6 +697,9 @@ header nav a:hover {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -699,6 +730,9 @@ header nav a:hover {
 }
 .gap-5 {
   gap: 1.25rem;
+}
+.gap-8 {
+  gap: 2rem;
 }
 .self-center {
   align-self: center;
@@ -733,6 +767,10 @@ header nav a:hover {
   --tw-border-opacity: 1;
   border-color: rgb(105 111 85 / var(--tw-border-opacity));
 }
+.bg-clay {
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 87 81 / var(--tw-bg-opacity));
+}
 .bg-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(245 235 226 / var(--tw-bg-opacity));
@@ -751,10 +789,6 @@ header nav a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-clay {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 87 81 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;

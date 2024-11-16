@@ -1,27 +1,37 @@
-<section class="grid-spaceBetween p-[5%] bg-clay latest-news">
-  <div class="col-2_xs-12 text-white p-[5%]">
+<section class="grid grid-cols-6 p-[5%] bg-clay latest-news">
+  <div class="text-white p-[5%]">
     <h2> Latest News </h2>
     <p class="opacity-40"> Covering March & April 2021 </p> 
   </div> 
-  <div class="col-9_xs-12 grid-spaceBetween overflow-x-auto flex-nowrap">
-    
+  <div class="col-span-5 flex overflow-x-auto flex-nowrap gap-8">
     {% for item in items%}
-
-    <!-- First Card   -->
-
-    <div class="col-5_xs-7 bg-white ">
+    <!--Card   -->
+    <div class="shrink-0 max-w-96 bg-white ">
         <div class="">
           <img class="aspect-square w-full object-cover" src="{{item.image}}" alt="{{item.image-alt-text}}">
         </div> 
         <div class="p-4"> 
           <p class="text-sm"> {{item.time}}</p> 
           <h3>{{item.title}}</h3> 
-          <p>{{item.brief-description_html}}</p> 
+          <p class="text-sm">{{item.brief-description_html}}</p> 
           <a href="{{item.link}}" class="inline-block mt-4"> Find out more &nbsp; &#10141;</a>
         </div>
     </div> 
-
     {% endfor %}
-
   </div>
 </section>
+
+<!-- Dan's -->
+<!-- <section class="grid-spaceBetween padded mob-padded-0 bg-featured latest-news">
+  <div class="col-2_xs-12 light-text mob-padded">
+    <h2> Latest News </h2>
+    <p class="subtle"> Covering March & April 2021 </p> 
+  </div> 
+  <div class="col-9_xs-12 grid-spaceBetween horizontal-scroll">
+
+  
+
+        </div>
+    </div> 
+  </div>
+</section>  -->

@@ -7,9 +7,9 @@
 
 {% for item in site.data.products.wines %}
 
-<section class="wine-option {{item.filter-values}} min-h-screen flex flex-col mb-24 alt-parent {% cycle 'bg-white', '' %}">
+<section class="wine-option {{item.filter-values}} min-h-screen flex flex-col mb-24 alt-parent {% cycle 'odd', 'even' %}">
   <div class="grid md:grid-cols-3 grow">
-    <div class=" self-center px-[10%] py-[20%] {% cycle 'md:pl-[20%]', 'md:order-last md:pl-[5%] md:pr-[20%]' %}">
+    <div class=" self-center wine-heading px-[10%] py-[20%]">
       <h2 class="text-5xl">{{item.wine}}</h2>
       <p class="pb-6">{{item.info}}</p>
       <a href="{{site.data.products.button-link}}" class="button">{{item.button-text}}</a>
@@ -17,7 +17,7 @@
     <div class="relative min-h-[50vh]">
         <img class="object-contain absolute w-full h-full" src="{{item.image}}">
     </div>
-    <div class="self-center px-[10%] py-[20%] {% cycle 'md:pl-[5%] md:pr-[20%]', 'md:order-first md:pl-[20%]' %}">
+    <div class="self-center wine-stats px-[10%] py-[20%]">
       <h3 class="text-2xl font-bold mb-0">Vintage:</h3>
       <p class="font-light">{{item.vintage}}</p>
       <h3 class="text-2xl font-bold mb-0">Blend:</h3>
@@ -33,22 +33,27 @@
 {% endfor %}
 
 <style>
-  .alt-parent{
-  }
-  .alt-parent:nth-child(even){
-    background-color: #fff;
+  
+  .odd {
+    background-color: white;
   }
 </style>
 
 <script>
   const filterButtons = document.querySelectorAll('.wine-filter-buttons button');
   const wines = document.querySelectorAll('.wine-option')
+  let filterShownCount = 0
   console.log(filterButtons,wines)
 
   function clickedbutton(){
     console.log(this.dataset.filtervalue)
 
+  filterShownCount = 0
+
     wines.forEach(wine => {
+      wine.classList.remove('odd')
+      wine.classList.remove('even')
+
       if (
         this.dataset.filtervalue == 'all'
       ){
@@ -61,8 +66,19 @@
       } else {
         wine.classList.add('hidden')
       }
+      
+      if(!wine.classList.contains('hidden') ) {
+        
+        filterShownCount++
+        
+        if ( filterShownCount %= 2 ) {
+          wine.classList.add('odd')
+        } else {
+          wine.classList.add('even')
+        }
+      }
+      
     })
-
 
   }
 
