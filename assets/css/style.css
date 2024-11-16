@@ -568,6 +568,9 @@ header nav a:hover {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mb-14 {
   margin-bottom: 3.5rem;
 }
@@ -583,20 +586,8 @@ header nav a:hover {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.ml-32 {
-  margin-left: 8rem;
-}
 .mt-4 {
   margin-top: 1rem;
-}
-.ml-4 {
-  margin-left: 1rem;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
-}
-.mb-10 {
-  margin-bottom: 2.5rem;
 }
 .block {
   display: block;
@@ -682,6 +673,9 @@ header nav a:hover {
 .flex-col {
   flex-direction: column;
 }
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
 .items-center {
   align-items: center;
 }
@@ -694,6 +688,9 @@ header nav a:hover {
 .gap-10 {
   gap: 2.5rem;
 }
+.gap-2 {
+  gap: 0.5rem;
+}
 .gap-3 {
   gap: 0.75rem;
 }
@@ -702,12 +699,6 @@ header nav a:hover {
 }
 .gap-5 {
   gap: 1.25rem;
-}
-.gap-6 {
-  gap: 1.5rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .self-center {
   align-self: center;
@@ -746,23 +737,24 @@ header nav a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(245 235 226 / var(--tw-bg-opacity));
 }
+.bg-gray-800\/20 {
+  background-color: rgb(31 41 55 / 0.2);
+}
 .bg-olive {
   --tw-bg-opacity: 1;
   background-color: rgb(162 149 114 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-sand {
   --tw-bg-opacity: 1;
   background-color: rgb(181 156 125 / var(--tw-bg-opacity));
 }
-.bg-gray-800\/20 {
-  background-color: rgb(31 41 55 / 0.2);
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-gray-800\/30 {
-  background-color: rgb(31 41 55 / 0.3);
+.bg-clay {
+  --tw-bg-opacity: 1;
+  background-color: rgb(116 87 81 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -794,6 +786,12 @@ header nav a:hover {
 .p-20 {
   padding: 5rem;
 }
+.p-4 {
+  padding: 1rem;
+}
+.p-\[5\%\] {
+  padding: 5%;
+}
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -805,6 +803,10 @@ header nav a:hover {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -842,6 +844,10 @@ header nav a:hover {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -854,45 +860,17 @@ header nav a:hover {
   padding-top: 20%;
   padding-bottom: 20%;
 }
-.px-28 {
-  padding-left: 7rem;
-  padding-right: 7rem;
-}
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
-.px-36 {
-  padding-left: 9rem;
-  padding-right: 9rem;
-}
-.px-44 {
-  padding-left: 11rem;
-  padding-right: 11rem;
-}
-.px-56 {
-  padding-left: 14rem;
-  padding-right: 14rem;
-}
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
 .pb-20 {
   padding-bottom: 5rem;
 }
 .pb-6 {
   padding-bottom: 1.5rem;
 }
-.pt-4 {
-  padding-top: 1rem;
-}
 .pl-32 {
   padding-left: 8rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .text-center {
   text-align: center;
@@ -930,10 +908,6 @@ header nav a:hover {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -955,13 +929,20 @@ header nav a:hover {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-cream {
+  --tw-text-opacity: 1;
+  color: rgb(245 235 226 / var(--tw-text-opacity));
+}
 .text-forest {
   --tw-text-opacity: 1;
   color: rgb(105 111 85 / var(--tw-text-opacity));
 }
-.text-cream {
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(245 235 226 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.opacity-40 {
+  opacity: 0.4;
 }
 .outline-none {
   outline: 2px solid transparent;
@@ -973,7 +954,7 @@ header nav a:hover {
 /* Custom CSS */
 
 svg {
-    color: #696F55;
+    stroke: #696F55;
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -1091,20 +1072,17 @@ svg {
   .md\:text-right {
     text-align: right;
   }
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:ml-56 {
-    margin-left: 14rem;
-  }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

@@ -1,5 +1,7 @@
 <section class="min-h-screen flex flex-col relative">
+  {% if block.decorative-background == true %}
   <div class="min-h-[80vh] min-w-full bg-olive absolute -top-[1px]"></div>
+  {% endif %}
   <div class="relative grid md:grid-cols-2 grow">
     <div class=" self-center px-[10%] py-[20%] relative">
       <h2 class="text-5xl">{{block.heading}}</h2>

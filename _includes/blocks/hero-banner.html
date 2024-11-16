@@ -1,10 +1,11 @@
 <header class="relative min-h-screen flex flex-col">
   <img class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full object-cover {% if block.image-focus == 'top' %} object-top {% elsif blockimage-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{block.image}}" alt="{{block.image-alt-text}}">
+  <div class="absolute inset-y-0 right-0 {% if block.image-width == 'full' %} w-full {% else %} w-3/5 {% endif %} h-full  bg-gray-800/20"></div>
   <div class="relative flex flex-col flex-grow justify-center">
       <!-- <hr class=" max-w-[40vh]"> -->
-      <div class="pl-32 lg:pl-56 py-10 text-cream bg-gray-800/20">
-          <p class="subtitle mb-0">{{block.subtitle}}</p>
-          <h1 class="text-8xl -tracking-[5%] pb-20">{{block.main-heading}}</h1>
+      <div class="pl-32 lg:pl-56 py-10 text-cream">
+          <p class="subtitle mb-0">{{block.pretitle}}</p>
+          <h1 class="text-8xl -tracking-[5%] pb-20 font-bold">{{block.main-heading}}</h1>
       </div>
       
   </div>
