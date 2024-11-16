@@ -13,6 +13,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
+    <style>
+
+/* Do not need this root version if using schemes */
+        :root{
+            --clay: {{site.data.style.clay}};
+            --cream: {{site.data.style.cream}};
+            --olive: {{site.data.style.olive}};
+            --herb: {{site.data.style.herb}};
+            --sand: {{site.data.style.sand}};
+            --forest: {{site.data.style.forest}};
+        }
+
+        /* Do not need this version if using simple TW variables */
+        :root, {% for scheme in site.data.style.schemes %}
+
+        .scheme-{{scheme.name}} {
+            --background:{{scheme.background-color}};
+            --pen:{{scheme.text-color}};
+            --button-color:{{scheme.button-color}};
+            --button-text:{{scheme.button-text}};
+            --hover-button-color:{{scheme.hover-button-color}};
+            --outline:{{scheme.border}};
+        }
+        {% endfor %}
+    </style>
+
 </head>
 
 <!-- This is our fontawesome icons -->
@@ -36,7 +62,7 @@
   </header>
 
   {% for block in page.blocks %}
-
+<div class="scheme-{{block.scheme}}">
   <!-- Flexibiity of using 1 block and linking back to site.data instead of page block -->
   {% if block.type == 'tours' %}
       {% assign items = site.data.experiences.tours %}
@@ -54,7 +80,7 @@
   {% endif %}
 
   {% include /blocks/{{block.id}}.html items=items link=link %}
-
+</div>
 {% endfor %}
 
 {{content}}

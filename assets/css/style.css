@@ -452,8 +452,7 @@ header nav a {
   border-color: transparent;
 }
 header nav a:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(105 111 85 / var(--tw-border-opacity));
+  border-color: var(--forest);
 }
 .container {
   width: 100%;
@@ -484,22 +483,19 @@ header nav a:hover {
   }
 }
 .button {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 87 81 / var(--tw-bg-opacity));
+  background-color: var(--clay);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(245 235 226 / var(--tw-text-opacity));
+  color: var(--cream);
 }
 .button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
   font-weight: 400;
-  --tw-text-opacity: 1;
-  color: rgb(245 235 226 / var(--tw-text-opacity));
+  color: var(--cream);
 }
 .odd {
   --tw-bg-opacity: 1;
@@ -574,9 +570,6 @@ header nav a:hover {
 .col-span-5 {
   grid-column: span 5 / span 5;
 }
-.m-10 {
-  margin: 2.5rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -604,9 +597,6 @@ header nav a:hover {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-.mb-24 {
-  margin-bottom: 6rem;
 }
 .mb-3 {
   margin-bottom: 0.75rem;
@@ -647,23 +637,20 @@ header nav a:hover {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
+.min-h-\[70vh\] {
+  min-height: 70vh;
+}
 .min-h-\[80vh\] {
   min-height: 80vh;
+}
+.min-h-\[95vh\] {
+  min-height: 95vh;
 }
 .min-h-\[97vh\] {
   min-height: 97vh;
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
-.min-h-\[95vh\] {
-  min-height: 95vh;
-}
-.min-h-\[70vh\] {
-  min-height: 70vh;
 }
 .w-3\/5 {
   width: 60%;
@@ -676,9 +663,6 @@ header nav a:hover {
 }
 .w-full {
   width: 100%;
-}
-.w-auto {
-  width: auto;
 }
 .min-w-\[78\%\] {
   min-width: 78%;
@@ -697,12 +681,6 @@ header nav a:hover {
 }
 .max-w-\[40vh\] {
   max-width: 40vh;
-}
-.max-w-\[50\%\] {
-  max-width: 50%;
-}
-.max-w-\[60\%\] {
-  max-width: 60%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -758,14 +736,8 @@ header nav a:hover {
 .gap-8 {
   gap: 2rem;
 }
-.self-end {
-  align-self: flex-end;
-}
 .self-center {
   align-self: center;
-}
-.justify-self-end {
-  justify-self: end;
 }
 .overflow-x-auto {
   overflow-x: auto;
@@ -786,45 +758,44 @@ header nav a:hover {
   border-right-width: 1px;
 }
 .border-clay {
-  --tw-border-opacity: 1;
-  border-color: rgb(116 87 81 / var(--tw-border-opacity));
+  border-color: var(--clay);
 }
 .border-cream {
-  --tw-border-opacity: 1;
-  border-color: rgb(245 235 226 / var(--tw-border-opacity));
+  border-color: var(--cream);
 }
 .border-forest {
-  --tw-border-opacity: 1;
-  border-color: rgb(105 111 85 / var(--tw-border-opacity));
+  border-color: var(--forest);
+}
+.border-outline {
+  border-color: var(--outline);
+}
+.bg-background {
+  background-color: var(--background);
+}
+.bg-button-color {
+  background-color: var(--button-color);
 }
 .bg-clay {
-  --tw-bg-opacity: 1;
-  background-color: rgb(116 87 81 / var(--tw-bg-opacity));
+  background-color: var(--clay);
 }
 .bg-cream {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 235 226 / var(--tw-bg-opacity));
+  background-color: var(--cream);
 }
-.bg-gray-800\/20 {
-  background-color: rgb(31 41 55 / 0.2);
-}
-.bg-olive {
-  --tw-bg-opacity: 1;
-  background-color: rgb(162 149 114 / var(--tw-bg-opacity));
-}
-.bg-sand {
-  --tw-bg-opacity: 1;
-  background-color: rgb(181 156 125 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+.bg-gray-800\/30 {
+  background-color: rgb(31 41 55 / 0.3);
 }
 .bg-gray-800\/40 {
   background-color: rgb(31 41 55 / 0.4);
 }
-.bg-gray-800\/30 {
-  background-color: rgb(31 41 55 / 0.3);
+.bg-olive {
+  background-color: var(--olive);
+}
+.bg-sand {
+  background-color: var(--sand);
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .object-contain {
   -o-object-fit: contain;
@@ -856,14 +827,14 @@ header nav a:hover {
 .p-20 {
   padding: 5rem;
 }
+.p-24 {
+  padding: 6rem;
+}
 .p-4 {
   padding: 1rem;
 }
 .p-\[5\%\] {
   padding: 5%;
-}
-.p-24 {
-  padding: 6rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -892,6 +863,10 @@ header nav a:hover {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -937,10 +912,6 @@ header nav a:hover {
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -952,9 +923,6 @@ header nav a:hover {
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pl-24 {
-  padding-left: 6rem;
 }
 .text-center {
   text-align: center;
@@ -984,6 +952,10 @@ header nav a:hover {
   font-size: 3rem;
   line-height: 1;
 }
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
@@ -991,10 +963,6 @@ header nav a:hover {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 .font-bold {
   font-weight: 700;
@@ -1017,13 +985,17 @@ header nav a:hover {
 .tracking-widest {
   letter-spacing: 0.1em;
 }
+.text-button-text {
+  color: var(--button-text);
+}
 .text-cream {
-  --tw-text-opacity: 1;
-  color: rgb(245 235 226 / var(--tw-text-opacity));
+  color: var(--cream);
 }
 .text-forest {
-  --tw-text-opacity: 1;
-  color: rgb(105 111 85 / var(--tw-text-opacity));
+  color: var(--forest);
+}
+.text-pen {
+  color: var(--pen);
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1035,6 +1007,9 @@ header nav a:hover {
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+.outline {
+  outline-style: solid;
 }
 
 /* Custom CSS */
@@ -1064,13 +1039,11 @@ svg {
 }
 
 .placeholder\:text-forest::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(105 111 85 / var(--tw-text-opacity));
+  color: var(--forest);
 }
 
 .placeholder\:text-forest::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(105 111 85 / var(--tw-text-opacity));
+  color: var(--forest);
 }
 
 .placeholder\:text-white::-moz-placeholder {
@@ -1091,14 +1064,17 @@ svg {
   opacity: 0.3;
 }
 
+.hover\:bg-hover-button-color:hover {
+  background-color: var(--hover-button-color);
+}
+
 .hover\:bg-yellow-950:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
 }
 
 .hover\:text-cream:hover {
-  --tw-text-opacity: 1;
-  color: rgb(245 235 226 / var(--tw-text-opacity));
+  color: var(--cream);
 }
 
 .focus\:border-orange-400:focus {
@@ -1112,20 +1088,8 @@ svg {
 }
 
 @media (min-width: 768px) {
-  .md\:order-first {
-    order: -9999;
-  }
-  .md\:order-last {
-    order: 9999;
-  }
   .md\:ml-4 {
     margin-left: 1rem;
-  }
-  .md\:mb-24 {
-    margin-bottom: 6rem;
-  }
-  .md\:mb-14 {
-    margin-bottom: 3.5rem;
   }
   .md\:flex {
     display: flex;
@@ -1138,9 +1102,6 @@ svg {
   }
   .md\:min-h-\[50vh\] {
     min-height: 50vh;
-  }
-  .md\:max-w-\[60\%\] {
-    max-width: 60%;
   }
   .md\:max-w-\[70\%\] {
     max-width: 70%;
@@ -1160,22 +1121,13 @@ svg {
   .md\:gap-6 {
     gap: 1.5rem;
   }
-  .md\:py-\[20\%\] {
-    padding-top: 20%;
-    padding-bottom: 20%;
-  }
   .md\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  .md\:pl-\[20\%\] {
-    padding-left: 20%;
-  }
-  .md\:pl-\[5\%\] {
-    padding-left: 5%;
-  }
-  .md\:pr-\[20\%\] {
-    padding-right: 20%;
+  .md\:py-\[20\%\] {
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   .md\:text-left {
     text-align: left;
@@ -1194,44 +1146,21 @@ svg {
 }
 
 @media (min-width: 1024px) {
-  .lg\:my-14 {
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
-  }
-  .lg\:mb-24 {
-    margin-bottom: 6rem;
-  }
-  .lg\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .lg\:p-44 {
     padding: 11rem;
   }
-  .lg\:p-14 {
-    padding: 3.5rem;
-  }
   .lg\:px-56 {
     padding-left: 14rem;
     padding-right: 14rem;
   }
-  .lg\:py-14 {
-    padding-top: 3.5rem;
+  .lg\:pb-14 {
     padding-bottom: 3.5rem;
   }
   .lg\:pl-56 {
     padding-left: 14rem;
-  }
-  .lg\:pl-44 {
-    padding-left: 11rem;
-  }
-  .lg\:pb-24 {
-    padding-bottom: 6rem;
-  }
-  .lg\:pb-14 {
-    padding-bottom: 3.5rem;
   }
   .lg\:text-7xl {
     font-size: 4.5rem;

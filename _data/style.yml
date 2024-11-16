@@ -1,0 +1,22 @@
+clay: '#745751'
+cream: '#F5EBE2'
+olive: '#A29572'
+herb: '#BAB7A6'
+sand: '#B59C7D'
+forest: '#696F55'
+# Only need one in customoization- above or below
+schemes:
+  - name: default
+    background-color: '#F5EBE2'
+    text-color: '#696F55'
+    button-color: '#745751'
+    button-text: '#F5EBE2'
+    hover-button-color: '#B59C7D'
+    border: '#745751'
+  - name: clay 
+    background-color: '#696F55'
+    text-color: '#F5EBE2'
+    button-color: '#A29572'
+    button-text: '#696F55'
+    hover-button-color: '#B59C7D'
+    border: '#BAB7A6'

@@ -1,4 +1,4 @@
-<section class=""> 
+<section class="bg-background text-pen"> 
     <div class="py-12">
 
       {% if block.heading %}
@@ -6,16 +6,16 @@
       {% endif %}
     
       <!-- Add scrolling feature if more than 3 cards -->
-      <div class="px-20 gap-5 {% if items.size > 3 %} md:flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %} no-scroll">
+      <div class="px-20 gap-5 {% if items.size > 3 %} md:flex overflow-x-auto w-full {% else %} grid md:grid-cols-3 {% endif %} no-scroll scheme-{{block.card-scheme}}">
       {% for item in items %}
 
-        <div class="text-center py-6 flex flex-col {% if block.card-borders == true %} border-2 border-clay px-6 {% endif %} {% if items.size > 3 %} basis-[30%]  shrink-0 {% endif %}">
-          <img class="aspect-square w-full object-cover border border-clay" src="{{item.image}}">
+        <div class="text-center  py-6 flex flex-col {% if block.card-borders == true %} border-2 border-outline px-6 {% endif %} {% if items.size > 3 %} basis-[30%]  shrink-0 {% endif %} bg-background text-pen">
+          <img class="aspect-square w-full object-cover border border-outline" src="{{item.image}}">
           <h4 class="text-3xl mt-4 {% if item.job %} mb-0 py-2 {% else %} py-4 {% endif %}">{{item.title}}</h4>
           {% if item.job %}
           <h5 class="text-2x1 font-body">{{item.job}}</h5>
           {% endif %}
-          <hr class="border-clay">
+          <hr class="border-outline">
           <div class="py-4 px-2">{{item.info_html}}</div>
 
           {% for item in item.features %}
@@ -26,7 +26,7 @@
 
           {% if item.button-link and item.button-text %}
           <div class="mt-auto">
-            <a href="{{item.button-link}}" class="button inline-block mb-3">{{item.button-text}}</a>
+            <a href="{{item.button-link}}" class="button bg-button-color text-button-text hover:bg-hover-button-color inline-block mb-3">{{item.button-text}}</a>
           </div>
           {% endif %}
         </div>

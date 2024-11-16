@@ -9,12 +9,18 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        clay: '#745751',
-        cream: '#F5EBE2',
-        olive: '#A29572',
-        herb: '#BAB7A6',
-        sand: '#B59C7D',
-        forest: '#696F55',
+        clay: 'var(--clay)',
+        cream: 'var(--cream)',
+        olive: 'var(--olive)',
+        herb: 'var(--herb)',
+        sand: 'var(--sand)',
+        forest: 'var(--forest)',
+        background: 'var(--background)',
+        pen: 'var(--pen)',
+        outline: 'var(--outline)',
+        "button-color": 'var(--button-color)',
+        "button-text": 'var(--button-text)',
+        "hover-button-color": 'var(--hover-button-color)',
       },
       fontFamily: {
         body: ["Montserrat", "sans-serif"],
