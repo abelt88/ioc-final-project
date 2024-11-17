@@ -3,7 +3,7 @@ cards:
   - image: /images/vineyard-12.jpg
     title: Signature Membership
     job: $675 per shipment
-    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    brief-description_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
     button-text: Join The Club
     button-link: /contact.html
     features:
@@ -14,7 +14,7 @@ cards:
   - image: /images/vineyard-12.jpg
     title: Legacy Membership
     job: $1,300 per shipment
-    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    brief-description_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
     button-text: Join The Club
     button-link: /contact.html
     features:
@@ -27,7 +27,7 @@ cards:
   - image: /images/vineyard-12.jpg
     title: Royal Membership
     job: $2,700 per shipment
-    info_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
+    brief-description_html: <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!</p>
     button-text: Join The Club
     button-link: /contact.html
     features:

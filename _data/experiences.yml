@@ -1,37 +1,37 @@
   more-than-link: /visit.html
   tours:
-      - image: /images/vineyard-8.jpg
-        image-alt-text: wine-one
-        title: Property Tour
-        brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
-        time: 90 minutes
-        button-text: Sign Up
-        button-link: 
       - image: /images/vineyard-9.jpg
         image-alt-text: wine-one
-        title: Wine Tasting
+        title: Introductory Wine Tasting
         brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
         time: 30 minutes
-        button-text: Sign Up
-        button-link: 
-      - image: /images/vineyard-9.jpg
+        button-text: Book Now
+        button-link: /visit.html
+      - image: /images/vineyard-8.jpg
         image-alt-text: wine-one
-        title: Bikram Hot Yoga
+        title: Tasting & Vineyard Tour
         brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
         time: 90 minutes
-        button-text: Sign Up
-        button-link: 
-      - image: /images/vineyard-9.jpg
+        button-text: Book Now
+        button-link: /visit.html
+      - image: /images/vineyard-13.jpg
         image-alt-text: wine-one
-        title: Bikram Hot Yoga
+        title: Paint & Sip
         brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
-        time: 90 minutes
-        button-text: Sign Up
-        button-link: 
-      - image: /images/vineyard-9.jpg
+        time: 120 minutes
+        button-text: Book Now
+        button-link: /visit.html
+      - image: /images/vineyard-1.jpg
         image-alt-text: wine-one
-        title: Bikram Hot Yoga
+        title: Grape Stomping
         brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
-        time: 90 minutes
-        button-text: Sign Up
-        button-link: 
+        time: 30 minutes
+        button-text: Book Now
+        button-link: /visit.html 
+      - image: /images/vineyard-2.jpg
+        image-alt-text: wine-one
+        title: Yoga in the Vineyard
+        brief-description_html: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+        time: 60 minutes
+        button-text: Book Now
+        button-link: /visit.html

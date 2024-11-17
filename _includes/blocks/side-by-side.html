@@ -1,16 +1,16 @@
 <section class="min-h-screen flex flex-col relative">
   {% if block.decorative-background == true %}
-  <div class="min-h-[80vh] min-w-full bg-olive absolute -top-[1px]"></div>
+  <div class="min-h-full md:min-h-[80vh] min-w-full bg-{{block.decorative-background-color}} absolute -top-[1px]"></div>
   {% endif %}
-  <div class="relative grid md:grid-cols-2 grow">
+  <div class="relative grid md:grid-cols-2 grow {% if block.decorative-background == true %} text-cream {% endif %}">
     <div class=" self-center px-[10%] py-[20%] relative">
       <h2 class="text-5xl">{{block.heading}}</h2>
       <p class="pb-6">{{block.paragraph}}</p>
       <a href="{{block.link}}" class="button">{{block.link-text}}</a>
     </div>
-    <div class="relative aspect-square md:aspect-auto md:h-full {% if block.image-side == 'left' %} order-first {% endif %}">
+    <div class="relative aspect-square md:aspect-auto md:h-full order-first {% if block.image-side == 'left' %} md:order-first {% else%} md:order-last {% endif %}">
         {% if block.decorative-border == true %}
-        <div class="absolute border-b {% if block.image-side == 'left' %} border-r {% else %} border-l right-0 {% endif %} border-clay min-w-[78%] min-h-[97vh]"></div>
+        <div class="absolute border-b {% if block.image-side == 'left' %} border-r {% else %} border-l right-0 {% endif %} border-transparent md:border-clay min-w-[78%] min-h-[97vh]"></div>
         {% endif %}
           <img class="absolute aspect-[3/4] object-cover top-[5%] w-[60%] {% if block.image-side == 'left' %} left-[5%] {% else %} right-[5%] {% endif %}" src="{{block.back-image}}">
           <img class="absolute aspect-[3/4] object-cover top-[8%] w-[67%] {% if block.image-side == 'left' %} left-[20%] {% else %} right-[20%] {% endif %}" src="{{block.front-image}}" alt="{{block.front-image-alt-text}}">

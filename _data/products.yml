@@ -39,3 +39,13 @@ wines:
     image: /images/white-wine-transp.png
     button-text: Add to cart
     button-link: #
+  - wine: Rose
+    filter-values: rose
+    info: Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos debitis numquam accusamus eveniet! Fugiat doloribus totam esse blanditiis neque nam consequatur soluta. Tempore perferendis atque nobis quas sunt nisi!
+    vintage: 2018
+    blend: 75% Pinot Noir, 25% Pinot Gris
+    taste: Strawberry, Peach, Berry
+    region: Provence
+    image: /images/rose-wine-transp.png
+    button-text: Add to cart
+    button-link: #
