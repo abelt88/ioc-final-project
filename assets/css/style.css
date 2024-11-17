@@ -679,6 +679,15 @@ header nav a:hover {
 .min-h-\[calc\(52vw_\+_1rem\)\] {
   min-height: calc(52vw + 1rem);
 }
+.min-h-\[calc\(51vw_\+_1rem\)\] {
+  min-height: calc(51vw + 1rem);
+}
+.min-h-\[calc\(50vw_\+_1rem\)\] {
+  min-height: calc(50vw + 1rem);
+}
+.min-h-\[calc\(50vw_\+_1\.5rem\)\] {
+  min-height: calc(50vw + 1.5rem);
+}
 .w-3\/5 {
   width: 60%;
 }
