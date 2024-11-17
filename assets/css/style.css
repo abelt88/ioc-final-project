@@ -736,6 +736,12 @@ header nav a:hover {
 .gap-8 {
   gap: 2rem;
 }
+.gap-9 {
+  gap: 2.25rem;
+}
+.gap-7 {
+  gap: 1.75rem;
+}
 .self-center {
   align-self: center;
 }
@@ -799,6 +805,9 @@ header nav a:hover {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-forest {
+  background-color: var(--forest);
 }
 .object-contain {
   -o-object-fit: contain;
@@ -926,6 +935,12 @@ header nav a:hover {
 }
 .pt-4 {
   padding-top: 1rem;
+}
+.pb-4 {
+  padding-bottom: 1rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
 }
 .text-center {
   text-align: center;
@@ -1078,6 +1093,14 @@ svg {
   opacity: 0.3;
 }
 
+.hover\:border-b:hover {
+  border-bottom-width: 1px;
+}
+
+.hover\:border-forest:hover {
+  border-color: var(--forest);
+}
+
 .hover\:bg-hover-button-color:hover {
   background-color: var(--hover-button-color);
 }
@@ -1085,6 +1108,14 @@ svg {
 .hover\:bg-yellow-950:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(66 32 6 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-clay:hover {
+  background-color: var(--clay);
+}
+
+.hover\:bg-sand:hover {
+  background-color: var(--sand);
 }
 
 .hover\:text-cream:hover {
