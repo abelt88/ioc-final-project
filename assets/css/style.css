@@ -655,6 +655,30 @@ header nav a:hover {
 .min-h-full {
   min-height: 100%;
 }
+.min-h-\[97\%\] {
+  min-height: 97%;
+}
+.min-h-\[51vw\] {
+  min-height: 51vw;
+}
+.min-h-\[54vw\] {
+  min-height: 54vw;
+}
+.min-h-\[52vw\] {
+  min-height: 52vw;
+}
+.min-h-\[cacl\(52vw_\+_4rem\)\] {
+  min-height: cacl(52vw + 4rem);
+}
+.min-h-\[calc\(52vw_\+_4rem\)\] {
+  min-height: calc(52vw + 4rem);
+}
+.min-h-\[calc\(52vw_\+_2rem\)\] {
+  min-height: calc(52vw + 2rem);
+}
+.min-h-\[calc\(52vw_\+_1rem\)\] {
+  min-height: calc(52vw + 1rem);
+}
 .w-3\/5 {
   width: 60%;
 }
