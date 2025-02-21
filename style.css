@@ -60,3 +60,7 @@
 svg {
     stroke: #696F55;
 }
+
+footer a:hover {
+    text-shadow: 1px 0 0 currentColor;
+  }
