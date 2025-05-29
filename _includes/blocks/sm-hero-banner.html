@@ -1,6 +1,6 @@
 <section class="relative min-h-[50vh] flex flex-col">
 
-  <img class="absolute inset-y-0 right-0  w-full h-full object-cover {% if block.image-focus == 'top' %} object-top {% elsif block.image-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{block.image}}" alt="{{block.image-alt-text}}">
+  <img class="absolute inset-0 w-full h-full object-cover {% if block.image-focus == 'top' %} object-top {% elsif block.image-focus == 'bottom' %} object-bottom {% else %} object-center {% endif %}" src="{{block.image}}" alt="{{block.image-alt-text}}">
 
   <div class="absolute inset-y-0 right-0 w-full h-full bg-gray-800/40"></div>
 
