@@ -1,0 +1,105 @@
+<header class="uppercase font-light px-4 py-2 flex flex-row justify-between items-center bg-forest text-cream">
+  <a href="/index.html" class="text-3xl uppercase font-bold"> Logo</a>
+  
+  <!-- Make into hamburger menu when small -->
+  <nav class="flex gap-4 text-center hidden md:block">
+    <a href="/our-wines.html" class="inline-block p-1">Our Wines</a>
+    <a href="/visit.html" class="inline-block p-1">Visit Us</a>
+    <a href="/about.html" class="inline-block p-1">Our Story</a>
+    <a href="/contact.html" class="inline-block p-1">Membership</a>
+    <a href="#" class="inline-block p-1">En-It</a>
+  </nav>
+  <span class="md:hidden text-2xl" style="cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <!-- Overlay for Hamburger Menu -->
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+
+      <a href="/index.html" class="inline-block p-1">Home</a>
+      <a href="/our-wines.html" class="inline-block p-1">Our Wines</a>
+      <a href="/visit.html" class="inline-block p-1">Visit Us</a>
+      <a href="/about.html" class="inline-block p-1">Our Story</a>
+      <a href="/contact.html" class="inline-block p-1">Membership</a>
+      <a href="#" class="inline-block p-1">En-It</a>
+
+    </div>
+  </div>
+
+</header>
+
+<style>
+
+  /* Overalay Styling */
+
+  .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #EDECE8;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #996445;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* Overlay Styling End */
+
+</style>
+
+<!-- Javascript -->
+
+<script>
+  
+// Overlay Nav Script
+
+  function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+
+</script>

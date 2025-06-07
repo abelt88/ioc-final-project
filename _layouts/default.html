@@ -49,17 +49,7 @@
 <body class="bg-cream text-forest font-body">
     <!------------------------------------------------------- Header --------------------------------------------------->
 
-<header class="uppercase font-light px-4 py-2 flex flex-col md:flex-row md:justify-between items-center bg-clay text-cream">
-    <a href="/index.html" class="text-3xl uppercase font-bold"> Logo</a>
-    <!-- Make into hamburger menu when small -->
-    <nav class="flex gap-4 text-center">
-      <a href="/our-wines.html" class="inline-block p-1">Our Wines</a>
-      <a href="/visit.html" class="inline-block p-1">Visit Us</a>
-      <a href="/about.html" class="inline-block p-1">Our Story</a>
-      <a href="/contact.html" class="inline-block p-1">Membership</a>
-      <a href="#" class="inline-block p-1">En-It</a>
-    </nav>
-  </header>
+    {% include /bookends/header.html %}
 
   {% for block in page.blocks %}
 <div class="scheme-{{block.scheme}}">
@@ -100,11 +90,11 @@
     </div>
     <div class="self-center py-4 md:gap-1 lg:gap-4 grid sm:grid-cols-2 lg:grid-cols-3 xl:flex text-center">
         <a href="/products.html" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Our Wines</a>
-        <a href="/visit.html" class="inline-block p-1">Visit Us</a>
-        <a href="/about.html" class="inline-block p-1">Our Story</a>
-        <a href="/contact.html" class="inline-block p-1">Membership</a>
-        <a href="#" class="inline-block p-1">Terms of Service</a>
-        <a href="#" class="inline-block p-1">Privacy Policy</a>
+        <a href="/visit.html" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Visit Us</a>
+        <a href="/about.html" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Our Story</a>
+        <a href="/contact.html" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Membership</a>
+        <a href="#" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Terms of Service</a>
+        <a href="#" class="inline-block p-1 border-transparent border-b hover:drop-shadow-md xl:hover:font-normal xl:hover:border-forest">Privacy Policy</a>
     </div>
     <div>
         <p class="font-heading text-center md:text-right">Subscribe to our newsletter</p>

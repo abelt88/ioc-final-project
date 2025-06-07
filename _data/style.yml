@@ -1,9 +1,9 @@
 clay: '#745751'
 cream: '#F5EBE2'
-olive: '#A29572'
+olive: '#AEA384'
 herb: '#BAB7A6'
 sand: '#B59C7D'
-forest: '#696F55'
+forest: '#575C47'
 # Only need one in customoization- above or below
 schemes:
   - name: default
