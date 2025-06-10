@@ -66,6 +66,13 @@ _structures:
             consectetur adipisicing elit. Sequi illo dignissimos earum rerum
             ipsam aperiam cupiditate voluptatem commodi dolorum consequuntur
             dolorem assumenda, modi iste ea ut enim, voluptas optio odio.
+file_config:
+  - glob:
+    _inputs:
+    _structures:
+    _select_data:
+editor:
+  default_path:
 timezone: America/New_York
 markdown:
   engine: commonmark
