@@ -649,18 +649,6 @@ header nav a:hover {
 .h-full {
   height: 100%;
 }
-.max-h-\[50vh\] {
-  max-height: 50vh;
-}
-.max-h-\[1000vh\] {
-  max-height: 1000vh;
-}
-.max-h-\[100vh\] {
-  max-height: 100vh;
-}
-.max-h-\[90vh\] {
-  max-height: 90vh;
-}
 .max-h-\[80vh\] {
   max-height: 80vh;
 }
@@ -729,9 +717,6 @@ header nav a:hover {
 }
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -804,9 +789,6 @@ header nav a:hover {
 }
 .bg-button-color {
   background-color: var(--button-color);
-}
-.bg-clay {
-  background-color: var(--clay);
 }
 .bg-cream {
   background-color: var(--cream);
@@ -954,17 +936,14 @@ header nav a:hover {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
-.pl-32 {
-  padding-left: 8rem;
+.pl-20 {
+  padding-left: 5rem;
 }
 .pt-10 {
   padding-top: 2.5rem;
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pl-20 {
-  padding-left: 5rem;
 }
 .text-center {
   text-align: center;
@@ -1207,9 +1186,6 @@ footer a:hover {
   }
   .md\:flex-row {
     flex-direction: row;
-  }
-  .md\:justify-between {
-    justify-content: space-between;
   }
   .md\:gap-1 {
     gap: 0.25rem;
